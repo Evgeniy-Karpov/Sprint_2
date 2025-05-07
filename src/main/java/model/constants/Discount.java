@@ -1,6 +1,6 @@
 package model.constants;
 
 public class Discount {
-    public static final int Discount = 60;
-    public static final int No_Discount = 0;
+    public static final int DISCOUNT = 60; // - правильный нэйминг констант
+    public static final int NO_DISCOUNT = 0;
 }

@@ -10,8 +10,8 @@ public class ShoppingCart {
     }
     public double getTotalPrice() { //  общая сумма товаров в корзине без скидки
         double sum = 0;
-        for (int i = 0; i < foods.length; i++) {
-            sum += foods[i].getAmount() * foods[i].getPrice();
+        for (Food food : foods) { // изменено на forEach
+            sum += food.getAmount() * food.getPrice();
         }
         return sum;
     }
